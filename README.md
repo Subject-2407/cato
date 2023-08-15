@@ -1,1 +1,1 @@
-<h1>Project Cato</h1><h2><i>(unfinished)</i></h2>
+<h1>Project Cato</h1><i>(unfinished)</i>
