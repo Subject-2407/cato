@@ -1,0 +1,662 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.monitor-card {
+    gap: 10px;
+}
+
+button:focus{
+    outline: 0;
+}
+
+html{
+    background-image: url('../img/eggback.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#EEEAD7;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+#loader {
+    border: 8px solid #56A1C0;
+    border-radius: 50%;
+    border-top: 8px solid gray;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    z-index: 10;
+}
+
+#data-load {
+    margin-left: 10px;
+    border: 5px solid #56A1C0;
+    border-radius: 50%;
+    border-top: 5px solid gray;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+#load-text{
+    font-size: 15px;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@font-face {
+    font-family: InriaSans;
+    src: url("/fonts/InriaSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: InriaSans;
+    src: url("/fonts/InriaSans-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: InriaSans;
+    src: url("/fonts/InriaSans-Light.ttf");
+    font-weight: lighter;
+}
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.login-info{
+    text-align: center;
+    font-family: InriaSans;
+    font-weight: bold;
+    font-size: 20px;
+    color: #D92332;
+    margin-top: 20px;
+}
+
+.loading{
+    background-color: #EEEAD7;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.login h1{
+    font-family: InriaSans;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-button:hover{
+    cursor: pointer;
+    background-color: #3f7a93;
+}
+
+.page1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+  
+ .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #EEEAD7;
+    border-radius: 20px;
+    padding: 50px;
+ }
+
+.login form p h1{
+    width: 250px;
+ }
+
+hr {
+    width: 100%;
+    border: 1px solid black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text-atas{
+    font-style: normal;
+font-weight: 600;
+font-size: 30px;
+    font-family: InriaSans;
+    margin-top: 10px;
+}
+
+.login-text-bawah{
+    font-family: InriaSans;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+form label{
+    font-family: InriaSans;
+}
+.form-wrapper{
+    margin: 0 auto;
+}
+
+.form-input{
+    margin-bottom: 10px;
+}
+
+input{
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background:  #C7C4B3;
+    width: 450px;
+    height: 24px;
+    display: block;
+    font-family: InriaSans;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+input[type=text] [type=password]{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.login-button{
+    background-color: #56A1C0;
+    border-radius: 20px;
+    text-align: center;
+    font-family: InriaSans;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    line-height: 50px;
+    padding: 0px 100px 0px 100px;
+}
+.ipt{
+    padding: 15px 30px;
+    font-size: 20px;
+}
+.ipt-txt{
+    text-align: left;
+    font-size: 20px;
+    font-family: InriaSans;
+    font-weight: 400;
+}
+.copyright{
+    text-align: center;
+    font-family: InriaSans;
+    font-weight: lighter;
+    font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    vertical-align:text-bottom;
+    font-size: 16px;
+}
+
+.monitor-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.monitor-wrapper button{
+    background-color: #C7C4B3;
+    padding: 12px 25px 12px 25px;
+    border: 0;
+    border-radius: 20px;
+    text-align: center;
+    font-family: InriaSans;
+    color: white;
+    width: auto;
+    font-size: 20px;
+}
+
+.title-section{
+    display: inline-block;
+    margin: 0 15%;
+}
+#data-load{
+    width:25px;
+    height:25px;
+}
+.loading-section{
+    width: 190px;
+    font-family: InriaSans;
+    border-radius: 20px;
+    background-color: #EEEAD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 70px;
+    padding: 0 10px 0 10px;
+}
+
+.component-box{
+    background-color: #EEEAD7;
+    height: 600px;
+}
+
+#manual-control{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+#monitor-box{
+    text-align: center;
+    border-radius: 20px;
+    width: 880px;
+}
+
+#control-box{
+    text-align: center;
+    border-radius: 20px;
+    width: 470px;
+}
+
+#control-box h2{
+    font-size: 28px;
+}
+
+.monitoring-container{
+    padding-top: 50px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    height: 650px;
+}
+
+.title-box{
+    align-self:flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 5%;
+}
+.title-box h1{
+    font-family: InriaSans;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.title-box h2{
+    font-family: InriaSans;
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+}
+
+#monitor-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.monitor-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: -50px;
+    width: 800px;
+}
+.monitor-detail{
+    padding-top: 24px;
+    padding-bottom: 16px;
+    border-radius: 20px;
+    line-height: 1.5;
+    font-family: InriaSans;
+    font-weight: bold;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 250px;
+    height: fit-content;
+}
+
+#sisawaktu, #suhu, #totalwaktu{
+    margin: 7px 0 7px 0;
+    font-size: 110px;
+}
+
+#timeleft{
+    color: black;
+    background-color: white;
+}
+
+#temperature{
+    background-color: #56A1C0;
+}
+
+#daystotal{
+    background-color: #D92332;
+}
+
+#time{
+    text-align: left;
+}
+
+#clock{
+    font-family: InriaSans;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#date{
+    font-family: InriaSans;
+    font-size: 20px;
+}
+
+.power-time{
+    display: inline-block;
+}
+
+.footer{
+    text-align: center;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#copyright-text{
+    font-family: InriaSans;
+    font-weight: lighter;
+    color: white;
+}
+
+#control-menu{
+    font-family: InriaSans;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.controls{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+}
+
+.components{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;  
+}
+
+.toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
+.components img{
+    width: 35px; 
+    height: auto;
+}
+
+.components h2{
+    display: inline-block;
+}
+.monitor-card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+@media(max-width:429px){
+    .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #EEEAD7;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    }
+    .login-text-atas {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: InriaSans;
+    margin-top: 10px;
+    align-content: center;
+}
+    input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #C7C4B3;
+    width: 200px;
+    height: 24px;
+    display: block;
+    font-family: InriaSans;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+    .login-text-bawah{
+        margin-bottom: 20px;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+  .monitoring-container {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+    
+
+#monitor-box {
+    text-align: center;
+    border-radius: 40px;
+    width: 85%;
+    height: 80%;
+}
+    .monitor-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.monitor-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+.monitoring-container {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 100%;
+    height:auto;
+    /* padding: 0px 20px; */
+    /* margin-left: 20px; */
+}
+#control-box {
+    text-align: center;
+    border-radius: 20px;
+    width: 95%;
+}
+
+.monitor-wrapper{
+        margin:0;
+    }
+    .footer{
+        margin:5%;
+    }
+#control-menu{
+        gap:0;
+    }
+    .title-section {
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 0px;
+}
+    .ipt-txt {
+    text-align: left;
+    font-size: 15px;
+    font-family: InriaSans;
+    font-weight: 400;}
+    
+    .ipt {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+    .login h1{
+        font-size:25px;
+    }
+}
+    .copyright{
+        margin-top:5px;
+        margin-bottom:5px;
+        font-size:13px;
+    }
+    .login-button{
+        font-size:18px;
+        padding: 0px 70px 0px 70px;
+        line-height:40px;
+        border-radius:15px;
+    }
+.loading-section {
+    width: 190px;
+    font-family: InriaSans;
+    border-radius: 20px;
+    background-color: #EEEAD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    height: 70px;
+    padding: 0 10px 0 10px;
+    margin-right: 10px;
+}
+#data-load{
+    width:30px;
+    height:20px;
+}
+.login-info{
+    font-size: 15px;
+}
+
+
+@media(max-width:375px){
+    .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #EEEAD7;
+    border-radius: 20px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    }
+    .login-text-atas {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: InriaSans;
+    margin-top: 10px;
+    align-content: center;
+}
+    input {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #C7C4B3;
+    width: 250px;
+    height: 24px;
+    display: block;
+    font-family: InriaSans;
+    font-weight: lighter;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+    .login-text-bawah{
+        margin-bottom:10px;
+    }
+    .login-text-atas {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: InriaSans;
+    margin-top: 10px;
+    align-content: center;
+}
+}

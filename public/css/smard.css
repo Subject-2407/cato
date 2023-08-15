@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+img{
+    width: 100px;
+}
+
+#heading{
+    position:sticky;
+    text-align: center;
+    background-color: #4b6cb7;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+table{
+    width: 500px;
+    text-align: center;
+}
+
+hr{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.tables {
+    border: 0px solid #1C6EA4;
+    background-color: #EEEEEE;
+    width: 600px;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.tables td, table.tables th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  table.tables tbody td {
+    font-size: 18px;
+    font-weight:500;
+  }
+  table.tables tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  table.tables thead {
+    background: #E67817;
+  }
+  table.tables thead th {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+  }
+  table.tables tfoot td {
+    font-size: 14px;
+  }
+  table.tables tfoot .links {
+    text-align: right;
+  }
+  table.tables tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+.cons{
+    display: none;
+    text-align: center;
+    background-color: rgb(252, 252, 252);
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.cons .input-field{
+    z-index: 55;
+}
+
+#selesai{
+    margin-top: 20px;
+    background-color: #e67817;
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px 5px 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+#selesai:hover{
+    cursor:pointer;
+}
+
+#notification{
+    width: 400px;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.labels{
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.input-field{
+    z-index: 55;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 300px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #fee600;
+    text-shadow: 5px 3px 0px #000000;
+}
+
+h2{
+    color: white;
+}
